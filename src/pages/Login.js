@@ -39,7 +39,7 @@ const Login = (props)=>{
                 cookies.set("username",respuesta.username,{path:"/"});
                 cookies.set("password",respuesta.password,{path:"/"});
                 alert("Bienvenido: "+respuesta.nombre+" "+respuesta.apellido);
-                navigate('/menu');
+                navigate('/main');
             }else{
                 alert("El usuario o contraseña no son correctos");
             }
@@ -51,7 +51,7 @@ const Login = (props)=>{
 
     useEffect(()=>{
         if(cookies.get("id")){
-            navigate('/menu');
+            navigate('/main');
         }
     },[]);
 
