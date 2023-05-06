@@ -13,7 +13,7 @@ const Login = (props)=>{
     const [showPass,setShowPass] = useState(false);
     const [pass,setPass] = useState('');
     const [user,setUser] = useState('');
-    const baseUrl='https://localhost:44377/api/Usuarios';
+    const baseUrl='http://localhost:5000/api/Usuarios';
     const cookies=new Cookies();
     const navigate=useNavigate();
 
